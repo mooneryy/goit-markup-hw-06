@@ -105,6 +105,7 @@ button {
 
 .header-nav-bar {
     margin-right: auto;
+    
 }
 
 .mobile-open-btn {
@@ -112,6 +113,7 @@ button {
     background-color: transparent;
     padding: 0;
     line-height: 0;
+    display: block;
 }
 
 .mobile-menu {
@@ -845,6 +847,11 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         margin: 0 auto;
         }
 
+    .hero-section {
+        min-height: 432px;
+        min-width: 320px;
+    }
+
     .benefits-icon {
         display: none;
     }
@@ -863,9 +870,10 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)  and (max-width: 1157px) {
     .container {
         width: 736px;
+        
     }
     
 
@@ -876,8 +884,10 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                     0px 1px 1px rgba(46, 47, 66, 0.16),
                     0px 1px 6px rgba(46, 47, 66, 0.08);
         border-bottom: 1px solid #e7e9fc;
+
         }
         
+
     .header-container {
         display: flex;
         justify-content: space-between;
@@ -974,6 +984,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     .mobile-open-btn {
         display: none;
     }
+
+
 
     .benefits-icon {
     display: none;
