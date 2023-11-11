@@ -55,26 +55,21 @@ img {
     font-style: normal;
 }
 
-button {
-    cursor: pointer;
-}
-
 .container {
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 /*                  HEADER MOBILE STYLES                */
-.navigation-list {
-    display: none;
-}
 
-.address-list {
-    display: none;
-}
 
 .page-header {
     padding-top: 16px;
     padding-bottom: 16px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 1px 6px rgba(46, 47, 66, 0.08);
+        border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -148,9 +143,7 @@ button {
     display: block;
     margin-top: 24px;
     margin-right: 8px;
-
 }
-
 
 .mobile-menu-list {
     display: inline-flex;
@@ -256,10 +249,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
     margin: 0 auto;
-
-    
+  
 }
 
 .hero-button {
@@ -431,9 +422,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 
 .portflio-list-item {
     background-color: #FFFFFF;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     
 }
 
@@ -832,12 +820,23 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .container {
         width: 289px;
-        margin: 0 auto;
         }
+
+    .navigation-list {
+        display: none;
+    }
+    
+    .address-list {
+        display: none;
+    }
 
     .hero-section {
         min-height: 432px;
         min-width: 320px;
+    }
+
+    .hero-title {
+        text-transform: capitalize;
     }
 
     .benefits-icon {
@@ -868,13 +867,14 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     .subscribe-form-label {
          text-align: center;
     }
+    
 }
 
-@media screen and (min-width: 768px)  and (max-width: 1157px) {
+
+/*                     TABLET STYLES               */
+@media screen and (min-width: 768px) {
     .container {
         width: 736px;
-        margin: 0 auto;
-        padding: 0 15px;
         
     }
     
@@ -887,11 +887,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         border-bottom: 1px solid #e7e9fc;
     }
         
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-         }
 
     .studio,
     .portfolio,
@@ -968,12 +963,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         line-height: 1.16;
         letter-spacing: 0.04em;
         display: block;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-    .address-list-item-name:hover,
-    .address-list-item-name:focus {
-        color: #404BBF;
         }
 
     .mobile-menu {
@@ -1013,21 +1002,21 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     }
 
     /*               TABLET BENEFITS SECTION               */
-    .benefits-icon {
+.benefits-icon {
     display: none;
-    }
+}
 
-    .benefits-list {
+.benefits-list {
     flex-wrap: wrap;
     column-gap: 24px;
     flex-direction: row;
     justify-content: space-between;
-    }
+}
 
    
-    .benefits-list-item-name {
+.benefits-list-item-name {
         width: 264px;
-    }
+}
 
 .benefits-list-item-text {
         align-self: stretch;
@@ -1035,12 +1024,12 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 }
 
     /*                   TABLET TEAM SECTION                */
-        .team-list {
+.team-list {
         flex-wrap: wrap;
         justify-content: center;
         column-gap: 24px;
         row-gap: 64px;
-        }
+}
 
 /*                   TABLET PORTFOLIO SECTION                */
 .overlay {
@@ -1106,16 +1095,207 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 }
 
 
+/*                DESKTOP HEADER STYLES               */
 
 @media screen and (min-width: 1158px) {
-    .container {
-        width: 1129px;
-     }
-
-    .address-list {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
+.container {
+    width: 1129px;
 }
 
+
+/*                   DESKTOP HEADER              */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
+
+
+/*                DESKTOP NAVIGATION STYLES          */
+.navigation-link-item-name {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-link-item-name:hover,
+.navigation-link-item-name:focus {
+    color: #404BBF;
+}
+
+/*                  DESKTOP ADDRESS                 */
+.address-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.address-list-item-name {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list-item-name:hover,
+.address-list-item-name:focus {
+    color: #404BBF;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/*            DESKTOP HERO SECTION              */
+.hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-background-desktop.jpg);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+}
+
+@media (min-resolution: 192dpi),
+screen and (min-resolution:2ddpx),
+screen and (min-device-pixel-ratio: 2) {
+    .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-background-desktop@2x.jpg);
+    }
+}
+
+.hero-button {
+    margin-top: 48px;
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404BBF;
+}
+
+
+/*              DESKTOP BENEFITS SECTION              */
+.benefits-section {
+    padding: 120px 0;
+}
+
+.benefits-list {
+    flex-wrap: nowrap;
+    width: calc(100%-(24*3)/4);
+}
+
+.benefits-icon-container {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.benefits-list-item-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.benefits-list-item-text {
+    width: 264px;
+    font-weight: 400;
+}
+
+.benefits-icon {
+    display: flex;
+}
+
+/*               DESKTOP TEAM SECTION               */
+.team-section {
+    padding: 120px 0;
+}
+
+.team-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.team-link-icon {
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link-icon:hover,
+.team-link-icon:focus {
+    background-color: #404BBF;
+}
+
+/*                DESKTOP PORTFOLIO SECTION           */
+.portfolio-section {
+    padding: 120px 0 120px 0;
+    }
+
+.porfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    .portflio-list-item {
+        flex-basis: calc(33.33% - 16px);
+        margin-bottom: 48px;
+    }
+    
+}
+
+
+.portflio-list-item {
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.portflio-list-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.overlay {
+    display: flex;
+}
+
+.overlay-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--IRIS, #4D5AE5);
+    color: var(--CLOUD, #F4F4FD);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px 32px;
+
+}
+
+.portflio-list-item:hover .overlay {
+    transform: translateY(0%);
+
+}
+
+
+
+
