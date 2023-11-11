@@ -683,15 +683,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     border: none;
 }
 
-.contacts-form-name {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--NAVY-BLUE, #2E2F42);
-    margin-bottom: 16px;
-}
 
 .contacts-form-wrapper {
     margin-bottom: 8px;
@@ -703,7 +694,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 
 .contacts-form-input-wrapper {
     position: relative;
-    margin-bottom: 16px;
 }
 
 .contacts-form-label {
@@ -1097,14 +1087,23 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
    
 }
 
-
-
-
-
+/*                  TABLET BACKDROP                   */
+.modal {
+    width: 408px;
+    min-height: 584px;
+    padding-left: 23px;
+    padding-right: 25px;
 }
 
+.contacts-form-field {
+    width: 360px;
+}
 
+.contacts-form-comment {
+    width: 360px;
+}
 
+}
 
 
 
