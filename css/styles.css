@@ -869,7 +869,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 
 
 /*                     TABLET STYLES               */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)  {
     .container {
         width: 736px;
         
@@ -1288,7 +1288,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-section {
    padding: 100px 0;
 }
-
 
 .social-link-list.footer-link {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
