@@ -448,8 +448,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 /*              MOBILE FOOTER SECTION             */
 .footer-section {
     background-color: #2E2F42;
-    padding-top: 98px;
-    padding-bottom: 96px;
+    padding: 96px 0 96px 0;
     flex-shrink: 0;
 }
 
