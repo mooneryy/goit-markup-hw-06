@@ -61,15 +61,6 @@ img {
 }
 
 /*                  HEADER MOBILE STYLES                */
-
-
-/* .page-header {
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 1px 6px rgba(46, 47, 66, 0.08);
-        border-bottom: 1px solid #e7e9fc;
-} */
-
 .header-container {
     display: flex;
     align-items: center;
@@ -239,7 +230,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 }
 
 .hero-title {
-    max-width: 289px;
     color: var(--WHITE, #FFF);
     text-align: center;
     font-size: 36px;
@@ -834,6 +824,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 
     .hero-title {
         text-transform: capitalize;
+        max-width: 169px;
     }
 
     .benefits-icon {
