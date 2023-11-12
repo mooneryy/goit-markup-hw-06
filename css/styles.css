@@ -1040,8 +1040,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     flex-wrap: wrap;
     align-items: baseline;
     gap: 24px;
-    justify-content: center;
-
 }
 
 .footer-section {
@@ -1055,7 +1053,6 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 
 .subscribe-form-wrapper {
     justify-content: center;
-   
 }
 
 .subscribe-form {
